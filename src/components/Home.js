@@ -6,9 +6,17 @@ import {
 } from 'react-native'
 
 export default class Home extends React.Component {
-  static navigationOptions = {
-    title: 'Welcome',
-  };
+  static navigationOptions = ({navigation}) => {
+    return {
+      title: 'Welcome',
+      headerRight: (
+        <Button
+          title='profile'
+          onPress={() => navigation.navigate('Profile', {user: 'John'})}
+        />
+      )
+    }
+  }
   render() {
     const {navigation} = this.props
     return (
