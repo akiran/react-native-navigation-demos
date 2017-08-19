@@ -15,7 +15,7 @@ export default class Home extends React.Component {
       <View style={styles.container}>
         <Button
           title='Go to Profile'
-          onPress={() => navigation.navigate('Profile')}
+          onPress={() => navigation.navigate('Profile', {user: 'John'})}
         />
         <Button
           title='Go to News'

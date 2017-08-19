@@ -6,8 +6,10 @@ import {
 } from 'react-native'
 
 export default class Profile extends React.Component {
-  static navigationOptions = {
-    title: 'Profile',
+  static navigationOptions = ({navigation}) => {
+    return {
+      title: `${navigation.state.params.user}'s Profile`
+    }
   };
   render() {
     const {navigation} = this.props
