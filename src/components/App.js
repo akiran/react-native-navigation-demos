@@ -3,19 +3,7 @@ import Home from './Home'
 import Profile from './Profile'
 import News from './News'
 
-// export default StackNavigator({
-//   Home: {
-//     screen: Home
-//   },
-//   News: {
-//     screen: News
-//   },
-//   Profile: {
-//     screen: Profile
-//   }
-// })
-
-export default DrawerNavigator({
+export default StackNavigator({
   Home: {
     screen: Home
   },
@@ -26,3 +14,15 @@ export default DrawerNavigator({
     screen: Profile
   }
 })
+
+// export default DrawerNavigator({
+//   Home: {
+//     screen: Home
+//   },
+//   News: {
+//     screen: News
+//   },
+//   Profile: {
+//     screen: Profile
+//   }
+// })
