@@ -16,10 +16,6 @@ export default class Profile extends React.Component {
     return (
       <View style={styles.container}>
         <Button
-          title='Go to Home'
-          onPress={() => navigation.navigate('Home')}
-        />
-        <Button
           title='Go Back'
           onPress={() => navigation.goBack()}
         />
